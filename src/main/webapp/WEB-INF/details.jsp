@@ -37,7 +37,7 @@
 		</div>
 		<div class="row">
 			<c:choose>
-				<c:when test="${loggedInUser.id == book.user.id}">
+				<c:when test="${loggedInUser.id != book.user.id}">
 					<h3>
 						<c:out value="${book.user.userName}"></c:out>
 						read

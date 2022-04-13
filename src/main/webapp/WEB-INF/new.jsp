@@ -54,6 +54,8 @@
 					<form:textarea path="thoughts" class="form-control" rows="5"
 						style="width:500px;" />
 				</div>
+					<!-- hidden -->
+					<form:input type="hidden" value="${loggedInUser.id}" path="user"/>
 				<div>
 					<input type="submit" class="btn btn-info mt-3" value="Submit" />
 				</div>
